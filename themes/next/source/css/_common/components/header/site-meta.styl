@@ -43,6 +43,14 @@
   .logo, .site-title, .site-subtitle, .custom-logo-image {
     opacity: 0;
     position: relative;
+    max-width: 96px;
     top: -10px;
+    border-radius: 50%;
+    transition: 2s all;
+  }
+//旋转
+  .logo, .site-title, .site-subtitle, .custom-logo-image:hover{
+    transform: rotate(360deg);
   }
 }
+

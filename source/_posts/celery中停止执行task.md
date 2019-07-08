@@ -13,7 +13,7 @@ tags: [celery, python]
 由于网上找不到解决办法，于是只能自己想办法了。
 想到celery 管理工具flower里面好像有停止celery task的功能，于是去找flower的源码，找到接口的源码如下:
 
-```
+```python
 logger.info("Revoking task '%s'", taskid)
 terminate = self.get_argument('terminate', default=False, type=bool)
 self.capp.control.revoke(taskid, terminate=terminate)
@@ -22,7 +22,7 @@ self.write(dict(message="Revoked '%s'" % taskid))
 
 核心代码是`self.capp.control.revoke` 想到去celery里面找寻`revoke`函数，发现有两处比较可疑，第一个是`celery.worker.control.revoke`，第二个是`celery.app.control.Control.revoke`，直觉来看，应该是第二个方法，但是第二个方法是在一个类里面的，要调用这个方法首先需要获取到celery app的实例，后来去celery 配置里面找，发现在__init__.py文件里面有`__all__ = ['celery_app']`这么一句，于是找到突破点了，引用这个包就能获取到celery_app了。
 
-```
+```python
 from test.ceyery_proj import celery_app
 celery_app.control.revoke(task_id, terminate=True)
 ```

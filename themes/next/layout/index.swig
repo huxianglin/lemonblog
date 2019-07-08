@@ -9,9 +9,7 @@
 {% endblock %}
 
 {% block content %}
-  <p style="background-color: #000; color: #fff;font-weight: 800;font-size: 15px; width: 60px;text-align: center;" >
-    <标签/>
-  </p>
+
   <div class="tag-cloud">
     <div class="tag-cloud-tags" align="left">
       {#{{ tagcloud({min_font: 14, max_font: 14, amount: 300, color: true, start_color: #888, end_color: #888}) }}#}
