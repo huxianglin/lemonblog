@@ -6,6 +6,7 @@ categories:
 mathjax: true
 copyright: true
 comment: true
+description: true
 photo: 
 ---
 

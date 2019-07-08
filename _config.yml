@@ -83,6 +83,8 @@ deploy:
 toc:
   maxDepth: 3
 
+# 统计插件
+# hexo-symbols-count-time
 symbols_count_time:
   symbols: true
   time: true
