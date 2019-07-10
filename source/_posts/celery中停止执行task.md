@@ -2,6 +2,7 @@ title: celery中停止执行task
 date: 2019-07-06 17:26:24
 desc: celery中停止执行task
 tags: [celery, python] 
+categories: python
 ---
 
 <!-- more -->

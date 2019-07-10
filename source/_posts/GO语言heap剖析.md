@@ -2,7 +2,7 @@ title: GO语言heap剖析
 desc: GO语言heap剖析
 date: 2017-08-23 10:33:42
 tags: [golang, heap]
-
+categories: golang
 ---
 <!-- more -->
 
