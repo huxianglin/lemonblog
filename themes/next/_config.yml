@@ -80,7 +80,7 @@ footer:
   # http://www.beian.miit.gov.cn
   beian:
     enable: true
-    icp: ICP备案号 yyy
+    icp: 粤ICP备19079797号-1
     gongan: xxx
 
   # Any custom text can be defined here.
