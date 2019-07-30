@@ -16,6 +16,7 @@
     "hexo-renderer-stylus": "^0.3.3",
     "hexo-server": "^0.3.3",
     "hexo-symbols-count-time": "^0.6.0",
-    "hexo-tag-cloud": "^2.1.1"
+    "hexo-tag-cloud": "^2.1.1",
+    "lodash": "^4.17.15"
   }
 }
